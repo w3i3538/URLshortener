@@ -1,3 +1,24 @@
-<div class="send-bar-bot">
-    
+<div class="d-flex justify-content-center">
+    <div class="send-bar-bot">
+        {{#if short_url}}
+        <div class="result">
+            <h2>您的短網址為</h2>
+            <input type="text" class="shortenerUrl" id="generatedURL" value="{{origin_url}}/{{short_url}}" disabled>
+            <button class="btn btn-primary" onclick="copy()"><i class="fa-regular fa-copy"></i></button>
+        </div>
+
+        <script>
+            function copy() {
+                const url_data = document.getElementById("generatedURL")
+                navigator.clipboard.writeText(url_data.innerText)
+                    .then(() => alert('已複製短網址'))
+                    .catch(error => console.log(error))
+            }
+        </script>
+        {{else}}
+        <div>
+            <h2>請在上方輸入網址</h2>
+        </div>
+        {{/if}}
+    </div>
 </div>
