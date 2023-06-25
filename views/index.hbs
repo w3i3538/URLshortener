@@ -3,8 +3,11 @@
         {{#if short_url}}
         <div class="result">
             <h2>您的短網址為</h2>
-            <p class="shortenerUrl" id="generatedURL" >{{host_url}}/{{short_url}}</p>
-            <button class="btn btn-primary" onclick="copy()"><i class="fa-regular fa-copy"></i></button>
+            <p class="shortenerUrl" id="generatedURL">{{host_url}}/{{short_url}}</p>
+            <div class="result-btn">
+                <button class="btn btn-primary" onclick="copy()"><i class="fa-regular fa-copy"></i></button>
+                <a class="btn btn-primary" href="/"><i class="fa-solid fa-rotate-right"></i></a>
+            </div>
         </div>
 
         <script>

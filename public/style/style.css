@@ -19,13 +19,11 @@ nav {
 .send-bar-mid {
     max-width: 680px;
     margin: 0 auto;
-
     padding: 25px 30px 30px;
     border: 1px solid rgb(0, 0, 0);
 
     background-color: #72acdc;
     border-radius: 10px;
-
     box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -38,7 +36,6 @@ nav {
 
     background-color: #97c1e4;
     border-radius: 10px;
-
     box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,6 +48,12 @@ nav {
     font-size: 18px;
 }
 
+.result-btn{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 .shortenerUrl {
     display: flex;
     align-items: center;
@@ -58,6 +61,7 @@ nav {
     width: auto;
     margin: 10px 10px 15px;
     padding: 8px;
+    
     background-color: #ffffff;
     border-radius: 5px;
 }
