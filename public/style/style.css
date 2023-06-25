@@ -1,0 +1,26 @@
+nav {
+    height: 80px;
+
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.link-img {
+    width: 12%;
+}
+
+.send-bar-mid {
+    max-width: 680px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 25px 30px 30px;
+    border: 0;
+
+    background-color: #72acdc;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
