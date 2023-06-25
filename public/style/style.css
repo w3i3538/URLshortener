@@ -1,6 +1,5 @@
 nav {
     height: 80px;
-
 }
 
 .navbar-brand {
@@ -8,12 +7,19 @@ nav {
     font-weight: bold;
 }
 
+.send-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .link-img {
-    width: 12%;
+    width: 200px;
 }
 
 .send-bar-top {
-    margin: 40px;
+    margin: 40px auto;
 }
 
 .send-bar-mid {
@@ -48,7 +54,7 @@ nav {
     font-size: 18px;
 }
 
-.result-btn{
+.result-btn {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -61,7 +67,7 @@ nav {
     width: auto;
     margin: 10px 10px 15px;
     padding: 8px;
-    
+
     background-color: #ffffff;
     border-radius: 5px;
 }
