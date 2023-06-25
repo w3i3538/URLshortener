@@ -49,7 +49,8 @@ app.post('/', (req, res) => {
         //以下列資料重新渲染index頁面
         .then(data =>
             res.render("index", {
-                origin_url: req.headers.origin,
+                origin_url,
+                host_url: req.headers.origin,
                 short_url: data.short_url,
             })
         )
@@ -65,7 +66,7 @@ app.get("/:short_URL", (req, res) => {
         .then(data => {
             if (!data) {
                 return res.render("error", {
-                    errorMsg: "Can't found the URL",
+                    errorMsg: "找不到以下短網址",
                     errorURL: req.headers.host + "/" + short_URL,
                 })
             }

@@ -52,6 +52,12 @@ nav {
 }
 
 .shortenerUrl {
- width: 250px;
- margin: 10px 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 10px 10px 15px;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 5px;
 }

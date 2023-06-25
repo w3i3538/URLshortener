@@ -3,7 +3,7 @@
         {{#if short_url}}
         <div class="result">
             <h2>您的短網址為</h2>
-            <input type="text" class="shortenerUrl" id="generatedURL" value="{{origin_url}}/{{short_url}}" disabled>
+            <p class="shortenerUrl" id="generatedURL" >{{host_url}}/{{short_url}}</p>
             <button class="btn btn-primary" onclick="copy()"><i class="fa-regular fa-copy"></i></button>
         </div>
 
@@ -11,7 +11,7 @@
             function copy() {
                 const url_data = document.getElementById("generatedURL")
                 navigator.clipboard.writeText(url_data.innerText)
-                    .then(() => alert('已複製短網址'))
+                    .then(() => alert(`已複製短網址 ${url_data.innerText} `))
                     .catch(error => console.log(error))
             }
         </script>
